@@ -1,2 +1,2 @@
-# wain23
-IEEE ICDM Workshop on AI for Nudging and Personalization.
+# SSTDM-23
+SSTDM 2023: 18th ICDM International Workshop on Spatial and Spatiotemporal Data Mining
