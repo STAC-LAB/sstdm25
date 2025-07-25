@@ -5,30 +5,89 @@
     <base href="..">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="WAIN-2023">
+    <meta name="description" content="SSTDM-2025">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
-    <title>WAIN-2023</title>
+    <title>SSTDM-2025</title>
+    <style>
+        .banner-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .banner-container img {
+            width: 100%;
+            height: auto;
+        }
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            color: #ffffff;
+        }
+        .banner-text .title1 {
+            font-size: 2em;
+            font-weight: bold;
+            color: #f0f0f0;
+        }
+        .banner-text .r {
+            font-style: italic;
+        }
+        @media (max-width: 768px) {
+            .banner-text {
+                font-size: 1.5em;
+                padding: 15px;
+            }
+            .banner-text .title1 {
+                font-size: 1.8em;
+            }
+        }
+        @media (max-width: 480px) {
+            .banner-text {
+                font-size: 1.2em;
+                padding: 10px;
+            }
+            .banner-text .title1 {
+                font-size: 1.5em;
+            }
+        }
+        .content {
+            width: 80%;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .content h2 {
+            text-align: center;
+        }
+        .content p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="banner">
-        <img src="assets/icdm24-banner.png" alt="IEEE ICDM 18th International Workshop on Spatial and Spatiotemporal Data Mining">
-        <div class="top-left">
-            <span class="title1">IEEE ICDM 17th International Workshop on Spatial  </span> <br>
-            <span class="title1">and Spatiotemporal Data Mining (SSTDM)</span>
-        </div>
-        <div class="bottom-right">
-            December 9, 2024 <br> Abu Dhabi National Exhibition Centre, UAE.
+    <div class="banner-container">
+        <img src="assets/icdm24-banner.png" alt="IEEE ICDM 20th International Workshop on Spatial and Spatiotemporal Data Mining">
+        <div class="banner-text">
+            <span class="title1">IEEE ICDM 20th International Workshop on</span> <br>
+            <span class="title1">Spatial and Spatiotemporal Data Mining (SSTDM-2025)</span> <br>
+            <span>November 12, 2025 <br> Washington, DC, USA. <span class="r">(Hybrid)</span></span>
         </div>
     </div>
 
     <table class="navigation">
         <tr>
             <td class="navigation">
-                <a class="current" title="Workshop Home Page" href=".">Home</a>
+                <a title="Workshop Home Page" href="index.html">Home</a>
             </td>
             <td class="navigation">
                 <a title="Organization" href="organization">Organization</a> 
@@ -40,32 +99,37 @@
                 <a title="Conference Program" href="program">Program</a> 
             </td>
             <td class="navigation">
-                <a title="Paper Submission" href="submissions">Submissions</a>
+                <a class="current" title="Paper Submission" href="submissions">Submissions</a>
             </td>
         </tr>
     </table>
 
-    <h2>Formatting Instructions</h2>
-  
-    <p>
-        This is an open call-for-papers. We invite both full papers (max 8 pages) describing mature work and 
-        short papers (max 5-6 pages) describing work-in-progress or case studies. Only original and high-quality 
-        papers formatted using the IEEE 2-column format <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank">(Latex Template)</a>, 
-        including the bibliography and any possible appendices will be considered for reviewing.
-    </p>
+    <div class="content">
+        <h2>Formatting Instructions</h2>
+        <p>
+            This is an open call-for-papers. We invite both full papers (max 8 pages) describing mature work and 
+            short papers (max 5-6 pages) describing work-in-progress or case studies. Only original and high-quality 
+            papers formatted using the IEEE 2-column format 
+            <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank">(Latex Template)</a>, 
+            including the bibliography and any possible appendices will be considered for reviewing.
+        </p>
 
-    <h2>Submission Instructions</h2>
-    
-    <p>
-        Please submit your paper using the <a href="https://wi-lab.com/cyberchair/2024/icdm24/scripts/submit.php?subarea=S21&undisplay_detail=1&wh=/cyberchair/2024/icdm24/scripts/ws_submit.php" target="_blank">online submission system</a>. 
-        Incase of any trouble, you can email your pdf file to <a href = "mailto: lirio.brell@gmail.com">lirio.brell@gmail.com</a>.
-    </p>
-    
+        <h2>Submission Instructions</h2>
+        <p>
+            Please submit your paper using the 
+            <a href="https://wi-lab.com/cyberchair/2025/icdm25/scripts/submit.php?subarea=S37&undisplay_detail=1&wh=/cyberchair/2025/icdm25/scripts/ws_submit.php" target="_blank">
+                online submission system
+            </a>. 
+            In case of any trouble, you can email your PDF file to 
+            <a href="mailto:stac.lab.raju@gmail.com">stac.lab.raju@gmail.com</a>.
+        </p>
+    </div>
+
     <table class="footer">
         <tr>
-            <td class="footer">Contact: <a href = "mailto: lirio.brell@gmail.com">Send Email</a> </td> 
+            <td class="footer">Contact: <a href = "mailto:stac.lab.raju@gmail.com">Send Email</a> </td> 
         </tr>
     </table>
 
-    </body>
+</body>
 </html>

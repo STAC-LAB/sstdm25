@@ -10,18 +10,197 @@
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
     <title>SSTDM-2025</title>
+    <style>
+        /* General styles for the banner */
+        .banner-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            color: #ffffff; /* Ensure text is white for better visibility */
+        }
+
+        .banner-text .title1 {
+            font-size: 2em;
+            font-weight: bold;
+            color: #f0f0f0; /* Light gray for better visibility */
+        }
+
+        .banner-text .r {
+            font-style: italic;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .banner-text {
+                font-size: 1.5em; /* Reduce font size for smaller screens */
+                padding: 15px; /* Adjust padding */
+            }
+
+            .banner-text .title1 {
+                font-size: 1.8em; /* Adjust title font size */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .banner-text {
+                font-size: 1.2em; /* Further reduce font size for very small screens */
+                padding: 10px; /* Adjust padding */
+            }
+
+            .banner-text .title1 {
+                font-size: 1.5em; /* Adjust title font size */
+            }
+        }
+
+        /* General styles for the content */
+        .content {
+            width: 80%;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .content h2, .content h3 {
+            text-align: center;
+        }
+
+        .content p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        /* General styles for the organizers section */
+        .organizers {
+            display: grid; /* Use grid layout for better organization */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+            gap: 20px; /* Add space between items */
+            margin: 20px auto; /* Center the section */
+            text-align: center; /* Center content */
+        }
+
+        .organizers-single {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .organizers-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .organizer {
+            text-align: center;
+            margin: 0 10px;
+            min-width: 150px;
+        }
+
+        .organizer img {
+            width: 120px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .organizer-name {
+            margin-top: 10px;
+            font-size: 1em;
+            color: blue;
+            text-align: center;
+        }
+
+        .organizer a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .organizer a:hover .organizer-name {
+            text-decoration: underline;
+        }
+
+        h3 {
+            text-align: center; /* Center subsection headings */
+            font-size: 1.5em; /* Adjust font size */
+            margin-bottom: 10px; /* Add space below the heading */
+        }
+
+        /* Additional styles for single and row organizers sections */
+        .organizers-single {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .organizers-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .organizer {
+            text-align: center;
+            margin: 0 10px;
+            min-width: 150px;
+        }
+
+        .organizer img {
+            width: 120px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .organizer-name {
+            margin-top: 10px;
+            font-size: 1em;
+            color: blue;
+            text-align: center;
+        }
+
+        .organizer a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .organizer a:hover .organizer-name {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="banner">
+    <div class="banner-container">
         <img src="assets/icdm24-banner.png" alt="IEEE ICDM 20th International Workshop on Spatial and Spatiotemporal Data Mining">
-        <div class="top-left">
-            <span class="title1">IEEE ICDM 20th International Workshop on </span> <br>
-            <span class="title1">Spatial and Spatiotemporal Data Mining (SSTDM-2025)</span>
-        </div>
-        <div class="bottom-right">
-            November 12, 2025 <br> Washington, DC, USA. <span class="r"></span>
+        <div class="banner-text">
+            <span class="title1">IEEE ICDM 20th International Workshop on</span> <br>
+            <span class="title1">Spatial and Spatiotemporal Data Mining (SSTDM-2025)</span> <br>
+            <span>November 12, 2025 <br> Washington, DC, USA. <span class="r">(Hybrid)</span></span>
         </div>
     </div>
 
@@ -45,56 +224,73 @@
         </tr>
     </table>
 
-    <h2>What this workshop is about?</h2>
-    <p>
-        With advances in remote sensors, sensor networks, and the proliferation of location sensing devices in daily life 
-        activities and common business practices, the generation of disparate, dynamic, and geographically distributed 
-        spatiotemporal data has exploded in recent years. In addition, significant progress in the ground, air- and 
-        space-borne sensor technologies has led to unprecedented access to earth science data, including polar data, 
-        for scientists from different disciplines, interested in studying the complementary nature of different parameters. 
-        These developments are quickly leading toward a data-rich but information-poor environment. The rate at which g
-        eospatial data are being generated clearly exceeds our ability to organize and analyze them to extract patterns 
-        critical for understanding in a timely manner a dynamically changing world. Access to such data can help address 
-        important challenges such as climate change, sea-level rise, and their impact on communities through transformative 
-        spatiotemporal data science and machine learning. This workshop focuses on advances at the intersection of 
-        Geospatial AI, Machine Learning, and Spatiotemporal Computing in order to address these scientific and computational 
-        challenges and provide innovative and effective solutions.  
-    </p>
-    
-    <p>
-        More specifically, efficient, reliable, and explainable AI, Machine Learning, and Data Mining techniques are 
-        needed for extracting useful geoinformation from large heterogeneous, often multi-modal spatiotemporal 
-        datasets (e.g., remote sensing, GIS, trajectory, geo-social media). Traditional techniques are ineffective 
-        as they do not incorporate the idiosyncrasies of the spatial domain, which include (but are not limited to) 
-        spatial autocorrelation, spatial context, and spatial constraints. Extracting useful geoinformation and 
-        actionable knowledge from several terabytes of streaming multi-modal data per day also demands the use of 
-        modern computing in all its forms (clusters to the cloud). Thus, we invite all researchers and practitioners 
-        to participate in this event and share, contribute, and discuss the emerging challenges in Geo-spatial-temporal AI, 
-        Machine Learning, and Data Mining. . 
-
-    </p>
-
-    <h2>Organizers</h2>
-
-    <table class="sponsors" style="width:90%">
-      
-        <tr>
-            <td class="sponsor">
-                <a href="https://www.linkedin.com/in/krishnakarthikgadiraju">
-                    <img src="assets/krishna.png" width="180px" height="248px"  alt="Krishna Karthik Gadiraju">
-                </a>
-            </td>         
-        </tr>
+    <div class="content">
+        <h2>What this workshop is about?</h2>
+        <p>
+            With advances in remote sensors, sensor networks, and the proliferation of location sensing devices in daily life 
+            activities and common business practices, the generation of disparate, dynamic, and geographically distributed 
+            spatiotemporal data has exploded in recent years. In addition, significant progress in the ground, air- and 
+            space-borne sensor technologies has led to unprecedented access to earth science data, including polar data, 
+            for scientists from different disciplines, interested in studying the complementary nature of different parameters. 
+            These developments are quickly leading toward a data-rich but information-poor environment. The rate at which g
+            eospatial data are being generated clearly exceeds our ability to organize and analyze them to extract patterns 
+            critical for understanding in a timely manner a dynamically changing world. Access to such data can help address 
+            important challenges such as climate change, sea-level rise, and their impact on communities through transformative 
+            spatiotemporal data science and machine learning. This workshop focuses on advances at the intersection of 
+            Geospatial AI, Machine Learning, and Spatiotemporal Computing in order to address these scientific and computational 
+            challenges and provide innovative and effective solutions.  
+        </p>
         
-        <tr>
-            
-            <td class="sponsor">
-                <a href="https://www.linkedin.com/in/krishnakarthikgadiraju" style="color:blue;"  target="_blank"> Krishna Karthik Gadiraju
+        <p>
+            More specifically, efficient, reliable, and explainable AI, Machine Learning, and Data Mining techniques are 
+            needed for extracting useful geoinformation from large heterogeneous, often multi-modal spatiotemporal 
+            datasets (e.g., remote sensing, GIS, trajectory, geo-social media). Traditional techniques are ineffective 
+            as they do not incorporate the idiosyncrasies of the spatial domain, which include (but are not limited to) 
+            spatial autocorrelation, spatial context, and spatial constraints. Extracting useful geoinformation and 
+            actionable knowledge from several terabytes of streaming multi-modal data per day also demands the use of 
+            modern computing in all its forms (clusters to the cloud). Thus, we invite all researchers and practitioners 
+            to participate in this event and share, contribute, and discuss the emerging challenges in Geo-spatial-temporal AI, 
+            Machine Learning, and Data Mining.
+        </p>
+    </div>
+
+    <div class="content">
+        <h2>Organizers</h2>
+
+        <!-- Workshop Chair Section -->
+        <h3>Workshop Chair</h3>
+        <div class="organizers-row">
+            <div class="organizer">
+                <a href="https://www.linkedin.com/in/krishnakarthikgadiraju">
+                    <img src="assets/gadiraju.jpg" alt="Krishna Karthik Gadiraju">
+                    <div class="organizer-name">
+                        Krishna Karthik Gadiraju
+                    </div>
                 </a>
-            </td>
-            
-        </tr>        
-    </table>
+            </div>
+        </div>
+
+        <!-- Steering Committee Section -->
+        <h3>Steering Committee</h3>
+        <div class="organizers-row">
+            <div class="organizer">
+                <a href="https://rvatsavai.github.io/">
+                    <img src="assets/raju.png" alt="Ranga Raju Vatsavai">
+                    <div class="organizer-name">
+                        Ranga Raju Vatsavai
+                    </div>
+                </a>
+            </div>
+            <div class="organizer">
+                <a href="https://www-users.cse.umn.edu/~shekhar/">
+                    <img src="assets/shashi.jpg" alt="Shashi Shekhar">
+                    <div class="organizer-name">
+                        Shashi Shekhar
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <table class="footer">
         <tr>

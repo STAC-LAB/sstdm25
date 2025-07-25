@@ -10,18 +10,98 @@
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
     <title>SSTDM-2025</title>
+    <style>
+        .banner-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .banner-container img {
+            width: 100%;
+            height: auto;
+        }
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            color: #ffffff;
+        }
+        .banner-text .title1 {
+            font-size: 2em;
+            font-weight: bold;
+            color: #f0f0f0;
+        }
+        .banner-text .r {
+            font-style: italic;
+        }
+        @media (max-width: 768px) {
+            .banner-text {
+                font-size: 1.5em;
+                padding: 15px;
+            }
+            .banner-text .title1 {
+                font-size: 1.8em;
+            }
+        }
+        @media (max-width: 480px) {
+            .banner-text {
+                font-size: 1.2em;
+                padding: 10px;
+            }
+            .banner-text .title1 {
+                font-size: 1.5em;
+            }
+        }
+        .main-heading {
+            text-align: center;
+            font-size: 2.5em;
+            font-family: 'Merriweather', serif;
+            color: #6d4343;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px #eee;
+        }
+        .section-heading {
+            text-align: left;
+            font-size: 1.7em;
+            font-family: 'Merriweather', serif;
+            color: #6d4343;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+        .content {
+            width: 80%;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .content p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        /* Left align all h4s and uls for consistency */
+        .content h4,
+        .content ul {
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="banner">
-        <img src="assets/icdm25-banner.png" alt="IEEE ICDM 18th International Workshop on Spatial and Spatiotemporal Data Mining">
-        <div class="top-left">
-            <span class="title1">IEEE ICDM 20th International Workshop on Spatial  </span> <br>
-            <span class="title1">and Spatiotemporal Data Mining (SSTDM)</span>
-        </div>
-        <div class="bottom-right">
-            November 12, 2025 <br> Washington DC, USA.
+    <div class="banner-container">
+        <img src="assets/icdm24-banner.png" alt="IEEE ICDM 20th International Workshop on Spatial and Spatiotemporal Data Mining">
+        <div class="banner-text">
+            <span class="title1">IEEE ICDM 20th International Workshop on</span> <br>
+            <span class="title1">Spatial and Spatiotemporal Data Mining (SSTDM-2025)</span> <br>
+            <span>November 12, 2025 <br> Washington, DC, USA. <span class="r">(Hybrid)</span></span>
         </div>
     </div>
 
@@ -45,88 +125,86 @@
         </tr>
     </table>
 
-    <h2>Call for Papers</h2>
-    <p>
-        With advances in remote sensors, sensor networks, and the proliferation of location-sensing devices in 
-        daily life activities and common business practices, the generation of disparate, dynamic, and 
-        geographically distributed spatiotemporal data has exploded in recent years. Advances in ground, 
-        air-, and space-borne sensor technologies provide unprecedented access to Earth science data. 
-        However, the rapid generation of geospatial data exceeds our ability to analyze it effectively. 
-        This workshop explores Geospatial AI, Machine Learning, and Spatiotemporal Computing technologies 
-        to address challenges and offer innovative solutions for a range of problems, including climate 
-        change, sea-level rise, food, energy, water, natural disasters, and other critical issues.” 
-    </p>
-    <p>
-        Innovative, efficient, and explainable AI/ML techniques are needed to extract value from massive, complex 
-        geospatial data. Traditional methods fall short due to their failure to account for spatial 
-        and temporal complexities. We invite researchers and practitioners to submit original papers 
-        that explore new approaches, share insights, and address challenges in geospatial AI and 
-        spatiotemporal data mining.
-    </p>
-    
+    <div class="content">
+        <div class="main-heading">Call for Papers</div>
+        <p>
+            With advances in remote sensors, sensor networks, and the proliferation of location-sensing devices in 
+            daily life activities and common business practices, the generation of disparate, dynamic, and 
+            geographically distributed spatiotemporal data has exploded in recent years. Advances in ground, 
+            air-, and space-borne sensor technologies provide unprecedented access to Earth science data. 
+            However, the rapid generation of geospatial data exceeds our ability to analyze it effectively. 
+            This workshop explores Geospatial AI, Machine Learning, and Spatiotemporal Computing technologies 
+            to address challenges and offer innovative solutions for a range of problems, including climate 
+            change, sea-level rise, food, energy, water, natural disasters, and other critical issues.
+        </p>
+        <p>
+            Innovative, efficient, and explainable AI/ML techniques are needed to extract value from massive, complex 
+            geospatial data. Traditional methods fall short due to their failure to account for spatial 
+            and temporal complexities. We invite researchers and practitioners to submit original papers 
+            that explore new approaches, share insights, and address challenges in geospatial AI and 
+            spatiotemporal data mining.
+        </p>
 
-    <h4>Topics of interest include, but not limited to, the following:</h4>
-    
-    <ul>
-      <li> Theoretical foundations of geo-spatial-temporal DM, AI, ML, and DL</li>     
-      <li> Recent advances in Deep Learning for Spatial and Spatiotemporal Big Data</li>        
-      <li> Spatial and spatiotemporal analogues of interesting patterns: frequent itemsets, clusters, outliers, and the algorithms to mine them </li>
-      <li> Advances in Unsupervised, Supervised, Semi-supervised, Self-supervised, Transfer, and Active learning for spatial and spatiotemporal data </li>
-      <li> Methods that explicitly model spatial and temporal context </li>
-      <li> Spatial and spatiotemporal autocorrelation and heterogeneity, its quantification and 
-efficient incorporation into the ML and DM algorithms </li>
-      <li> Image (multispectral, hyperspectral, aerial, radar) information mining, change detection </li>
-      <li> Role of uncertainty in spatial and spatiotemporal data mining </li>
-      <li> Integrated approaches to multi-source and multimodal data mining </li>
-      <li> Resource-aware techniques to mine streaming spatiotemporal data </li>
-      <li> Spatial and spatiotemporal data mining at multiple granularities (space and time) </li>
-      <li> Data structures and indexing methods for spatiotemporal data mining </li>
-      <li> Spatial and Spatiotemporal online analytical processing and data warehousing </li>
-      <li> Geospatial Intelligence </li>
-      <li> High-performance SSTDM </li>
-      <li> Spatiotemporal data mining at the edge </li>
-      <li> Novel applications that demonstrate success stories of spatial and spatiotemporal data mining (e.g., Climate Change, Sea level rise, 
-          Natural Hazards, Critical Infrastructures) </li>
-      <li> Spatiotemporal data mining for Agriculture, Energy, Water, Forestry, and Natural Resources </li>
-      <li> Spatiotemporal data mining for detecting processes on and in the polar ice sheets, and attributing their changes to climate variability and change </li> 
-      <li> Harness big, heterogeneous, and discontinuous spatiotemporal data coupled with physics models to improve our understanding of polar ice dynamics </li>
-      <li> Spatiotemporal data mining for Epidemiology and Health </li>
-      <li> Spatiotemporal data mining for Social Good </li>
-      <li> Spatiotemporal benchmark datasets </li>
-    </ul>
-    
-    <h4>Important Dates</h4>
-    
-    <ul>
-      <li>August 15, 2025: Paper submission</li>
-      <li>Sep 15, 2025: Acceptance notification</li>
-      <li>Sep 25, 2025: Camera-ready deadline and copyright form</li>
-      <li>November 12, 2025: Workshop date <span class="r">()</span> </li>
-    </ul>
-    
-    <h4>Paper Submissions</h4>
-    
-    <p>
-        This is an open call-for-papers. We invite both full papers (max 8 pages) describing mature work and 
-        short papers (max 4-5 pages) describing work-in-progress or case studies. Only original and high-quality 
-        papers formatted using the IEEE 2-column format <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank">(Latex Template)</a>, 
-        including the bibliography and any possible appendices will be considered for reviewing.
-    </p>
-    
-    <h4>Proceedings</h4>    
-    <p>
-        All submitted papers will be evaluated by 2-3 program committee members, and accepted papers 
-        will be included in an ICDM Workshop Proceedings volume, to be published by IEEE Computer Society 
-        Press and will be included in the IEEE Xplore Digital Library. Check workshop website for 
-        <a href="https://stac-lab.github.io/sstdm25/submissions/" target="_blank"> sumbission </a>
-        instructions.
-    </p>
-       
+        <div class="section-heading">Topics of interest include, but not limited to, the following:</div>
+        <ul>
+            <li>Theoretical foundations of geo-spatial-temporal DM, AI, ML, and DL</li>     
+            <li>Recent advances in Deep Learning for Spatial and Spatiotemporal Big Data</li>        
+            <li>Spatial and spatiotemporal analogues of interesting patterns: frequent itemsets, clusters, outliers, and the algorithms to mine them</li>
+            <li>Advances in Unsupervised, Supervised, Semi-supervised, Self-supervised, Transfer, and Active learning for spatial and spatiotemporal data</li>
+            <li>Methods that explicitly model spatial and temporal context</li>
+            <li>Spatial and spatiotemporal autocorrelation and heterogeneity, its quantification and efficient incorporation into the ML and DM algorithms</li>
+            <li>Image (multispectral, hyperspectral, aerial, radar) information mining, change detection</li>
+            <li>Role of uncertainty in spatial and spatiotemporal data mining</li>
+            <li>Integrated approaches to multi-source and multimodal data mining</li>
+            <li>Resource-aware techniques to mine streaming spatiotemporal data</li>
+            <li>Spatial and spatiotemporal data mining at multiple granularities (space and time)</li>
+            <li>Data structures and indexing methods for spatiotemporal data mining</li>
+            <li>Spatial and Spatiotemporal online analytical processing and data warehousing</li>
+            <li>Geospatial Intelligence</li>
+            <li>High-performance SSTDM</li>
+            <li>Spatiotemporal data mining at the edge</li>
+            <li>Novel applications that demonstrate success stories of spatial and spatiotemporal data mining (e.g., Climate Change, Sea level rise, Natural Hazards, Critical Infrastructures)</li>
+            <li>Spatiotemporal data mining for Agriculture, Energy, Water, Forestry, and Natural Resources</li>
+            <li>Spatiotemporal data mining for detecting processes on and in the polar ice sheets, and attributing their changes to climate variability and change</li> 
+            <li>Harness big, heterogeneous, and discontinuous spatiotemporal data coupled with physics models to improve our understanding of polar ice dynamics</li>
+            <li>Spatiotemporal data mining for Epidemiology and Health</li>
+            <li>Spatiotemporal data mining for Social Good</li>
+            <li>Spatiotemporal benchmark datasets</li>
+            <li>Prompt Engineering and Adaptation of Visiion Language Models (VLM) for geospatial data analysis</li>
+            <li>Multimodal models for geospatial data analysis</li>
+        </ul>
+
+        <div class="section-heading">Important Dates</div>
+        <ul>
+            <li>August 31, 2025: Paper submission</li>
+            <li>Sep 15, 2025: Acceptance notification</li>
+            <li>Sep 25, 2025: Camera-ready deadline and copyright form</li>
+            <li>November 12, 2025: Workshop date</li>
+        </ul>
+
+        <div class="section-heading">Paper Submissions</div>
+        <p>
+            This is an open call-for-papers. We invite both full papers (max 8 pages) describing mature work and 
+            short papers (max 4-5 pages) describing work-in-progress or case studies. Only original and high-quality 
+            papers formatted using the IEEE 2-column format <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank">(Latex Template)</a>, 
+            including the bibliography and any possible appendices will be considered for reviewing.
+        </p>
+
+        <div class="section-heading">Proceedings</div>
+        <p>
+            All submitted papers will be evaluated by 2-3 program committee members, and accepted papers 
+            will be included in an ICDM Workshop Proceedings volume, to be published by IEEE Computer Society 
+            Press and will be included in the IEEE Xplore Digital Library. Check workshop website for 
+            <a href="https://stac-lab.github.io/sstdm25/submissions/" target="_blank">submission</a>
+            instructions.
+        </p>
+    </div>
+
     <table class="footer">
         <tr>
             <td class="footer">Contact: <a href = "mailto: stac.lab.raju@gmail.com">Send Email</a> </td> 
         </tr>
     </table>
 
-    </body>
+</body>
 </html>

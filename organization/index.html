@@ -5,36 +5,122 @@
     <base href="..">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
-    </script>
     <meta name="description" content="SSTDM-25">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Workshop">
-    <title>Program | SSTDM-25</title>
+    <title>Organization | SSTDM-25</title>
+    <style>
+        /* General styles for the banner */
+        .banner-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .banner-container img {
+            width: 100%;
+            height: auto;
+        }
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            color: #ffffff;
+        }
+        .banner-text .title1 {
+            font-size: 2em;
+            font-weight: bold;
+            color: #f0f0f0;
+        }
+        .banner-text .r {
+            font-style: italic;
+        }
+        @media (max-width: 768px) {
+            .banner-text {
+                font-size: 1.5em;
+                padding: 15px;
+            }
+            .banner-text .title1 {
+                font-size: 1.8em;
+            }
+        }
+        @media (max-width: 480px) {
+            .banner-text {
+                font-size: 1.2em;
+                padding: 10px;
+            }
+            .banner-text .title1 {
+                font-size: 1.5em;
+            }
+        }
+        .organizers-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .organizer {
+            text-align: center;
+            margin: 0 10px;
+            min-width: 150px;
+        }
+        .organizer img {
+            width: 120px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+        .organizer-name {
+            margin-top: 10px;
+            font-size: 1em;
+            color: blue;
+            text-align: center;
+        }
+        .organizer a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .organizer a:hover .organizer-name {
+            text-decoration: underline;
+        }
+        .content {
+            width: 80%;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .content h2, .content h3 {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="banner">
-        <img src="assets/icdm25-banner.jpg" alt="IEEE ICDM 20th International Workshop on Spatial and Spatiotemporal Data Mining">
-        <div class="top-left">
-            <span class="title1">IEEE ICDM 20th International Workshop on Spatial  </span> <br>
-            <span class="title1">and Spatiotemporal Data Mining (SSTDM-25) </span>
-        </div>
-        <div class="bottom-right">
-            November 12, 2025 <br> Washington DC, USA. <span class="r">(Hybrid)</span>
+    <div class="banner-container">
+        <img src="assets/icdm24-banner.png" alt="IEEE ICDM 20th International Workshop on Spatial and Spatiotemporal Data Mining">
+        <div class="banner-text">
+            <span class="title1">IEEE ICDM 20th International Workshop on</span> <br>
+            <span class="title1">Spatial and Spatiotemporal Data Mining (SSTDM-25)</span> <br>
+            <span>November 12, 2025 <br> Washington, DC, USA. <span class="r">(Hybrid)</span></span>
         </div>
     </div>
 
     <table class="navigation">
         <tr>
             <td class="navigation">
-                <a class="current" title="Workshop Home Page" href=".">Home</a>
+                <a title="Workshop Home Page" href="index.html">Home</a>
             </td>
             <td class="navigation">
-                <a title="Organization" href="organization">Organization</a> 
+                <a class="current" title="Organization" href="organization">Organization</a> 
             </td>
             <td class="navigation">
                 <a title="CFP" href="cfp">CFP</a> 
@@ -48,60 +134,62 @@
         </tr>
     </table>
 
-    
-    <div class="row">
-      <div class="column">
-        <table class="m">
-          <tr>
-              <td><h5>Workshop Co-chairs</h5></td>
-          </tr>
-          <tr>
-            <td><a href="https://www.linkedin.com/in/krishnakarthikgadiraju" style="color:blue;"  target="_blank">Krishna Karthik Gadiraju</a>, Juniper Networks</td>
-          </tr>
-          <tr>
-              <td><h5>Steering Committee</h5></td>
-          </tr>  
-          <tr>
-              <td>Shashi Shekhar, University of Minnesota, USA</td>
-              <td>Ranga Raju Vatsavai, North Carolina State University, USA</td>
-          </tr>              
-        </table>
-      </div>
-      <div class="column">
-        <table class="m">
-          <tr>
-            <td><h5>Program Committee (Updated Soon)</h5></td>
-          </tr>
-     <!--       
-          <tr>
-            <td>Varun Chandola, SUNY at Buffalo and NSF. USA</td>
-          </tr>       
-          <tr>
-            <td>Anton Dereventsov, Lirio, LLC. USA</td>
-          </tr>  
-          <tr>
-            <td>Nicolás Díaz Ferreyra, Hamburg University of Technology, Germany</td>
-          </tr>  
-          <tr>
-            <td>Stipe Pandžić, Utrecht University. The Netherlands</td>
-          </tr>
-          <tr>
-            <td>Biplav Srivastava, University of South Carolina. USA</td>
-          </tr>
-          <tr>
-            <td>Chris Symons, Lirio, LLC. USA</td>
-          </tr>
-          <tr>
-            <td>Raju Vatsavai, Lirio and NCSU. USA</td>
-          </tr>  
-          <tr>
-            <td>Clayton Webster, Lirio, LLC. USA</td>
-          </tr> 
-       -->
-          
-       </table>
-      </div>
-    </div>    
+    <div class="content">
+        <h2>Organizers</h2>
+
+        <!-- Workshop Chair Section -->
+        <h3>Workshop Chair</h3>
+        <div class="organizers-row">
+            <div class="organizer">
+                <a href="https://www.linkedin.com/in/krishnakarthikgadiraju" target="_blank">
+                    <img src="assets/gadiraju.jpg" alt="Krishna Karthik Gadiraju">
+                    <div class="organizer-name">
+                        Krishna Karthik Gadiraju<br>
+                        <span style="font-size:0.9em;color:#333;">Juniper Networks</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Steering Committee Section -->
+        <h3>Steering Committee</h3>
+        <div class="organizers-row">
+            <div class="organizer">
+                <a href="https://www-users.cse.umn.edu/~shekhar/" target="_blank">
+                    <img src="assets/shashi.jpg" alt="Shashi Shekhar">
+                    <div class="organizer-name">
+                        Shashi Shekhar<br>
+                        <span style="font-size:0.9em;color:#333;">University of Minnesota, USA</span>
+                    </div>
+                </a>
+            </div>
+            <div class="organizer">
+                <a href="https://rvatsavai.github.io/" target="_blank">
+                    <img src="assets/raju.png" alt="Ranga Raju Vatsavai">
+                    <div class="organizer-name">
+                        Ranga Raju Vatsavai<br>
+                        <span style="font-size:0.9em;color:#333;">North Carolina State University, USA</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Program Committee Section -->
+        <h3>Program Committee (Updated Soon)</h3>
+        <ul style="max-width:600px;margin:0 auto 40px auto;">
+            <!-- Example entries, uncomment and update as needed -->
+            <!--
+            <li>Varun Chandola, SUNY at Buffalo and NSF. USA</li>
+            <li>Anton Dereventsov, Lirio, LLC. USA</li>
+            <li>Nicolás Díaz Ferreyra, Hamburg University of Technology, Germany</li>
+            <li>Stipe Pandžić, Utrecht University. The Netherlands</li>
+            <li>Biplav Srivastava, University of South Carolina. USA</li>
+            <li>Chris Symons, Lirio, LLC. USA</li>
+            <li>Raju Vatsavai, Lirio and NCSU. USA</li>
+            <li>Clayton Webster, Lirio, LLC. USA</li>
+            -->
+        </ul>
+    </div>
 
     <table class="footer">
         <tr>
@@ -110,5 +198,4 @@
     </table>
     
 </body>
-
 </html>
