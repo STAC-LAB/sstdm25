@@ -13,179 +13,131 @@
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Workshop">
     <title>Program | SSTDM-24 </title>
+    <style>
+        .banner-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .banner-container img {
+            width: 100%;
+            height: auto;
+        }
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            color: #ffffff;
+        }
+        .banner-text .title1 {
+            font-size: 2em;
+            font-weight: bold;
+            color: #f0f0f0;
+        }
+        .banner-text .r {
+            font-style: italic;
+        }
+        @media (max-width: 768px) {
+            .banner-text {
+                font-size: 1.5em;
+                padding: 15px;
+            }
+            .banner-text .title1 {
+                font-size: 1.8em;
+            }
+        }
+        @media (max-width: 480px) {
+            .banner-text {
+                font-size: 1.2em;
+                padding: 10px;
+            }
+            .banner-text .title1 {
+                font-size: 1.5em;
+            }
+        }
+        .content {
+            width: 80%;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .content h2 {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="banner">
-        <img src="assets/icdm24-banner.jpg" alt="IEEE ICDM International Workshop on Spatial and Spatiotemporal Data Mining">
-        <div class="top-left">
-            <span class="title1">IEEE ICDM International Workshop on Spatial </span> <br>
-            <span class="title1">Spatiotemporal Data Mining (SSTDM)</span>
-        </div>
-        <div class="bottom-right">
-            December 9, 2024 <br> Abu Dhabi. <span class="r"></span>
+    <div class="banner-container">
+        <img src="assets/icdm24-banner.png" alt="IEEE ICDM 20th International Workshop on Spatial and Spatiotemporal Data Mining">
+        <div class="banner-text">
+            <span class="title1">IEEE ICDM 20th International Workshop on</span> <br>
+            <span class="title1">Spatial and Spatiotemporal Data Mining (SSTDM-2025)</span> <br>
+            <span>November 12, 2025 <br> Washington, DC, USA. <span class="r">(Hybrid)</span></span>
         </div>
     </div>
 
     <table class="navigation">
         <tr>
             <td class="navigation">
-                <a class="current" title="Workshop Home Page" href=".">Home</a>
+                <a title="Workshop Home Page" href="../index.html">Home</a>
             </td>
             <td class="navigation">
-                <a title="Organization" href="organization">Organization</a> 
+                <a title="Organization" href="../organization/index.html">Organization</a> 
             </td>
             <td class="navigation">
-                <a title="CFP" href="cfp">CFP</a> 
+                <a title="CFP" href="../cfp/index.html">CFP</a> 
             </td>
             <td class="navigation">
-                <a title="Conference Program" href="program">Program</a> 
+                <a class="current" title="Conference Program" href="index.html">Program</a> 
             </td>
             <td class="navigation">
-                <a title="Paper Submission" href="submissions">Submissions</a>
+                <a title="Paper Submission" href="../submissions/index.html">Submissions</a>
             </td>
         </tr>
     </table>
 
-    <h2>Workshop Program (Dec. 9, 8:30-11:00 am, Abu Dhabi Time, Room CS 8)</h2>
+    <div class="content">
+        <h2>Workshop Program (TBA)</h2>
 
-    <table>
-        <tr>
-            <td class="date" rowspan="2">
-                8:30 <BR>
-            </td>
-            <td class="title-special">
-                Welcome from the organizers.
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Raju Vatsavai
-            </td>
-        </tr>
-    </table>
+        <!--
+        <table>
+            <tr>
+                <td class="date" rowspan="2">
+                    8:30 <BR>
+                </td>
+                <td class="title-special">
+                    Welcome from the organizers.
+                </td>
+            </tr>
+            <tr>
+                <td class="speaker">
+                    Raju Vatsavai
+                </td>
+            </tr>
+        </table>
 
+        <table id="TechnicalSession">
+            ...
+        </table>
 
- 
+        <table id="Keynote1">
+            ...
+        </table>
 
-    <table id="TechnicalSession">
-        <tr>
-            <td class="date">
-                8:35-10:05
-            </td>
-            <td class="title">
-                Technical Session (Chairs: Dr. Raju Vatsavai, North Carolina State University)
-            </td>
-        </tr>
-        
-        <tr>
-            <td class="date">
-                8:35-8:50
-            </td>
-            <td class="speaker">
-                Jiechao Gao, Yuangang Li, and Syeda Faiza Ahmed. <BR>
-                "Fed-LDR: Federated Local Data-infused Graph Creation with Node-centric Model Refinement."
-            </td>
-        </tr>
-        
-        <tr>
-            <td class="date">
-                8:50-9:05
-            </td>
-           
-            <td class="speaker">
-                Małgorzata Charytanowicz, Kajetan Perzanowski, Maciej Januszczak, Aleksandra Wołoszyn-Gałęza, Maria Sobczuk, and Piotr Kulczycki. <BR>
-                "A New Approach Towards Identification of Individuals Belonging to Different Subpopulations Using Machine Learning Models and CLC Data."
-            </td>
-        </tr>
-        
-        <tr>
-            <td class="date">
-                9:05-9:20
-            </td>
-           
-            <td class="speaker">
-                Md Mahin, Aparna Budhavarapuand, Karima Elgarroussi, Ernst L Leiss, and Christoph F Eick. 
-                "Sirius: A Density-based Colocation Mining Framework for Sets of Continuous Spatial Variables."
-            </td>
-        </tr>
+        <table>
+            ...
+        </table>
+        -->
 
-        <tr>
-            <td class="date">
-                9:20-9:35
-            </td>
-           
-            <td class="speaker">
-                Souhei Kodama and Shin Ando. "Neighborhood Spatio-temporal Self-Attention for Crowd Flow Prediction."
-            </td>
-        </tr>
-
-        <tr>
-            <td class="date">
-                9:35-9:50
-            </td>
-           
-            <td class="speaker">
-                Surya Durbha, Chetan Mahajan, Rajat Shinde, and Gérald Fenoy. "Landslide-as-a-Service: Standards Driven framework for Landslide Mapping using Machine Learning and GeoData Cube."
-            </td>
-        </tr>
-
-        <tr>
-            <td class="date">
-                9:50-10:05
-            </td>
-           
-            <td class="speaker">
-                Harshitaa Yarramsetti, Kritika Javali, Mukund Logasundar, Richard Li, and Ranga Raju Vatsavai. 
-                "A Deep Learning Based Cloud Imputation Framework."
-            </td>
-        </tr>
-    </table>
-
-    <table id="Keynote1">
-        <tr>
-            <td class="date" rowspan="3">
-                10:05-10:45<BR>
-            </td>
-            <td class="title">
-                Keynote Talk  
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                <span class="r">Prof. Surya Durbha.</span> "Geocomputational and spatio-temporal challenges for post-disaster damage monitoring." <br>
-
-                <span class="b"> Abstract: </span> 
-                <span class="b">Bio: Professor and Head of the Centre of Studies in Resources Engineering, 
-                    Indian Institute of Technology Bombay, Powai 400076 Mumbai, India</span> 
-            </td>
-        </tr>
-        <tr>
-        
-       <tr>
-            <td class="abstract">
-                Session Chair: Raju Vatsavai
-            </td>
-        </tr>
-    </table>
-    
-    <table>
-        <tr>
-            <td class="date" rowspan="2">
-                10:45
-            </td>
-            <td class="title-special">
-                Closing Remarks.
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Raju Vatsavai
-            </td>
-        </tr>
-    </table>
-    
+        <div style="text-align:center; font-size:1.5em; margin:40px 0;">Program details to be announced (TBA).</div>
+    </div>
 
     <table class="footer">
         <tr>
@@ -194,6 +146,5 @@
     </table>
 
 </body>
-
 </html>
 
