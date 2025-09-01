@@ -39,7 +39,7 @@ Innovative, efficient, and explainable AI/ML techniques are needed to extract va
 * Geospatial RAG and Agentic AI applications
 
 *** Important Dates ***
-Aug 25, 2025: Paper submission
+Sep 08, 2025: Paper submission
 Sep 15, 2025: Acceptance notification
 Sep 25, 2025: Camera-ready deadline and copyright form
 Nov 12, 2025: Workshop date
