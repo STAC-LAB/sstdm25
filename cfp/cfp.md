@@ -40,7 +40,7 @@ Innovative, efficient, and explainable AI/ML techniques are needed to extract va
 
 *** Important Dates ***
 Sep 08, 2025: Paper submission
-Sep 15, 2025: Acceptance notification
+Sep 19, 2025: Acceptance notification
 Sep 25, 2025: Camera-ready deadline and copyright form
 Nov 12, 2025: Workshop date
 
