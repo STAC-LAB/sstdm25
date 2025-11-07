@@ -2,15 +2,16 @@
 <html lang='en'>
 
 <head>
-    <base href="..">
+    
     <link rel="shortcut icon" type="image/png" href="/sstdm25/assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="/sstdm25/assets/main.css"/>
-    <meta name="description" content="SSTDM-2025">
+    <meta name="description" content="SSTDM-25">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>SSTDM-2025 Program</title>
+    <meta name="KeyWords" content="Workshop">
+    <title>Organization | SSTDM-25</title>
     <style>
+        /* General styles for the banner */
         .banner-container {
             position: relative;
             text-align: center;
@@ -39,15 +40,6 @@
         .banner-text .r {
             font-style: italic;
         }
-        @media (max-width: 768px) {
-            .banner-text {
-                font-size: 1.5em;
-                padding: 15px;
-            }
-            .banner-text .title1 {
-                font-size: 1.8em;
-            }
-        }
         @media (max-width: 480px) {
             .banner-text {
                 font-size: 1.2em;
@@ -57,13 +49,46 @@
                 font-size: 1.5em;
             }
         }
+        .organizers-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .organizer {
+            text-align: center;
+            margin: 0 10px;
+            min-width: 150px;
+        }
+        .organizer img {
+            width: 120px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+        .organizer-name {
+            margin-top: 10px;
+            font-size: 1em;
+            color: blue;
+            text-align: center;
+        }
+        .organizer a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .organizer a:hover .organizer-name {
+            text-decoration: underline;
+        }
         .content {
             width: 80%;
             margin: 0 auto;
             font-family: Arial, sans-serif;
             line-height: 1.6;
         }
-        .content h2 {
+        .content h2, .content h3 {
             text-align: center;
         }
     </style>
@@ -72,10 +97,10 @@
 <body>
 
     <div class="banner-container">
-        <img src="assets/icdm24-banner.png" alt="IEEE ICDM 20th International Workshop on Spatial and Spatiotemporal Data Mining">
+        <img src="/sstdm25/assets/icdm24-banner.png" alt="IEEE ICDM 20th International Workshop on Spatial and Spatiotemporal Data Mining">
         <div class="banner-text">
             <span class="title1">IEEE ICDM 20th International Workshop on</span> <br>
-            <span class="title1">Spatial and Spatiotemporal Data Mining (SSTDM-2025)</span> <br>
+            <span class="title1">Spatial and Spatiotemporal Data Mining (SSTDM-25)</span> <br>
             <span>November 12, 2025 <br> Washington, DC, USA. <span class="r">(Hybrid)</span></span>
         </div>
     </div>
@@ -86,13 +111,13 @@
                 <a title="Workshop Home Page" href="/sstdm25/index.html">Home</a>
             </td>
             <td class="navigation">
-                <a title="Organization" href="/sstdm25/organization/index.html">Organization</a> 
+                <a class="current" title="Organization" href="/sstdm25/organization/index.html">Organization</a> 
             </td>
             <td class="navigation">
                 <a title="CFP" href="/sstdm25/cfp/index.html">CFP</a> 
             </td>
             <td class="navigation">
-                <a class="current" title="Conference Program" href="/sstdm25/program/index.html">Program</a> 
+                <a title="Conference Program" href="/sstdm25/program/index.html">Program</a> 
             </td>
             <td class="navigation">
                 <a title="Paper Submission" href="/sstdm25/submissions/index.html">Submissions</a>
@@ -101,8 +126,26 @@
     </table>
 
     <div class="content">
-        <h2>Workshop Program (TBA)</h2>
-        <div style="text-align:center; font-size:1.5em; margin:40px 0;">Program details to be announced (TBA).</div>
+        <h2>Workshop Program (Dec 12, 2025, 1:30 PM - 5:30 PM Eastern, Room Statler A) <br/>
+            Session Chair: Dr. Raju Vatsavai</h2>
+        <table border="1" style="border-collapse:collapse; width:100%;">
+            <tbody>
+                <tr><td style="border:1px solid #888; vertical-align:top;">1:30 PM - 1:35 PM</td><td style="border:1px solid #888; vertical-align:top;">Welcome from the organizers (Dr. Raju Vatsavai, North Carolina State University)</td></tr>
+                <tr><td style="border:1px solid #888; vertical-align:top;">1:35 PM - 2:10 PM</td><td style="border:1px solid #888; vertical-align:top;">Keynote Talk: Dr. Yanjie Fu, Arizona State University<br>Title: <em>Can GeoAI be the Copilot of Urban Operation and Design for Shaping Tomorrow’s Cities?</em></td></tr>
+                <tr><td style="border:1px solid #888; vertical-align:top;">2:10 PM - 2:30 PM</td><td style="border:1px solid #888; vertical-align:top;"><em>Subtrajectory Clustering with Machine Learning on Quantum Computers</em><br>Wil Bishop, Eleazar Leal, and Le Gruenwald</td></tr>
+                <tr><td style="border:1px solid #888; vertical-align:top;">2:30 PM - 2:50 PM</td><td style="border:1px solid #888; vertical-align:top;"><em>Geospatial Data Mining for Turbine Layout and Energy Forecasting in Offshore Wind Farms</em><br>Cristian Noriega Monsalve, Aparna Varde, and Stefan Robila</td></tr>
+                <tr><td style="border:1px solid #888; vertical-align:top;">2:50 PM - 3:05 PM</td><td style="border:1px solid #888; vertical-align:top;"><em>Understanding NBA team formations and plays</em><br>Christos Gunopulos and Evimaria Terzi</td></tr>
+                <tr><td style="border:1px solid #888; vertical-align:top;">3:05 PM - 3:25 PM</td><td style="border:1px solid #888; vertical-align:top;"><em>An Efficient Self-Supervised Learning Framework for Swarm Robot Trajectory Analysis</em><br>Brooklyn Berry, Gaukhar Nurbek, Juan Manuel Perez, Richard Tapia, Qi Lu, and Yifeng Gao</td></tr>
+                <tr><td style="border:1px solid #888; vertical-align:top;">3:25 PM - 3:45 PM</td><td style="border:1px solid #888; vertical-align:top;"><em>Shared-Head Architecture for Multi-Domain Instance Segmentation and Counting in Aerial and Crowd Imagery</em><br>Rohit Sriram and Ranga Raju Vatsavai</td></tr>
+                <tr><td style="border:1px solid #888; vertical-align:top;">3:45 PM - 4:05 PM</td><td style="border:1px solid #888; vertical-align:top;"><em>Uncertainty Quantification of Conformalized Spatio-Temporal Graph Convolutional Network on Forecasting</em><br>Yang Zhao, Yuzhou Chen, and Mindy (Xinghua) Shi</td></tr>
+                <tr><td style="border:1px solid #888; vertical-align:top;">5:05 PM - 5:25 PM</td><td style="border:1px solid #888; vertical-align:top;"><em>Predicting Antarctic Sea Ice with Scalable Deep Learning Models</em><br>Sai Vikas Amaraneni, Maloy Kumar Devnath, Shalini Srinivasa, Chhaya Kulkarni, Sudip Chakraborty, and Vandana P. Janeja</td></tr>
+                <tr><td style="border:1px solid #888; vertical-align:top;">4:05 PM - 4:30 PM</td><td style="border:1px solid #888; vertical-align:top;">Coffee Break</td></tr>
+                <tr><td style="border:1px solid #888; vertical-align:top;">4:30 PM - 5:05 PM</td><td style="border:1px solid #888; vertical-align:top;">Keynote Talk: Dr. Vandana Janeja, University of Maryland, Baltimore County<br>Title: <em>Near and Far, Far and Wide, Surface and Below: AI driven Science at all Scales.</em></td></tr>
+                <tr><td style="border:1px solid #888; vertical-align:top;">5:05 PM - 5:25 PM</td><td style="border:1px solid #888; vertical-align:top;"><em>Predicting Antarctic Sea Ice with Scalable Deep Learning Models</em><br>Sai Vikas Amaraneni, Maloy Kumar Devnath, Shalini Srinivasa, Chhaya Kulkarni, Sudip Chakraborty, and Vandana P. Janeja</td></tr>
+                <tr><td style="border:1px solid #888; vertical-align:top;">5:25 PM - 5:30 PM</td><td style="border:1px solid #888; vertical-align:top;">Closing remarks (Dr. Raju Vatsavai)</td></tr>
+            </tbody>
+        </table>
+    </div>
     </div>
 
     <table class="footer">
